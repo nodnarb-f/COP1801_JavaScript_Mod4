@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Display Entry</title>
+
+  </head>
+
+  <body>
+    <script language="JavaScript">
+      function greeting() {
+          var input = prompt("Type (staff) if you are staff and (student) if you are a student");
+          var name = prompt("Enter you name: ");
+
+          if (input == "staff") {
+            document.write("Hello " + name + ", have a great day!");
+          } else if (input == "student") {
+              document.write("Hello " + name + ", I hope you are enjoying your classes!");
+          } else {
+              document.write("Hello " + name + ", next time please follow the instructions and type staff or student!");
+          }
+
+      }
+
+    </script>
+
+    Click the button to enter if you are staff or a student.<br><br>
+
+    <input type="submit" value="Button" onclick="greeting();"><br/>
+    <br>
+
+
+    <p id="display1"></p>
+
+
+
+  </body>
+</html>
